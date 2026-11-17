@@ -26,7 +26,9 @@ an adapter if your video engine needs one, and test the node locally.
     write one.
 - Outbound HTTPS (port 443) from the agent to the network, or one of the
   inbound and private-link setups in [connection modes](connection-modes.md).
-- A **node token** from the PodTorrent team. Keep it secret; it identifies
+- A **node token**. Register your node at
+  [podtorrent.com/register-node](https://podtorrent.com/register-node), then
+  create a token in the operator dashboard. Keep it secret; it identifies
   your node.
 
 ## Install
@@ -213,7 +215,7 @@ Check that the stream ends with a chunk containing `usage`, then `data: [DONE]`.
 | `PODTORRENT_NODE_TOKEN is not set` | Set the environment variable. |
 | `engine at ... not reachable` | The engine isn't listening at `-engine`, or the container can't reach it. |
 | `engine ... does not list these manifest models` | Make `models[].id` match `/v1/models` exactly. |
-| `link down, reconnecting ... 401` | Wrong or revoked node token. |
+| `link down, reconnecting ... 401` | Wrong or revoked node token; create a new one in the operator dashboard. |
 | `link down, reconnecting ... dial` | No outbound access to the network URL; check firewall and proxy. |
 | `request failed ... engine unreachable` | The engine stopped or restarted mid-request. |
 

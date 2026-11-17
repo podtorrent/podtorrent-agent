@@ -18,7 +18,9 @@ the Macs and needs no open ports.
   Thunderbolt), or just one Mac to try it out.
 - exo installed on each Mac, **all on the same exo version** (Macs on
   different versions don't join each other).
-- A node token from the PodTorrent team.
+- A node token: register at
+  [podtorrent.com/register-node](https://podtorrent.com/register-node), then
+  create one in the operator dashboard.
 - An administrator password on each Mac, for step 2.
 
 ## Set it up
