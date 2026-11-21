@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.6.0 (2026-11-21)
+
+- Breaking for Go importers: the module path and container image moved to
+  the `podtorrent` org (`github.com/podtorrent/podtorrent-agent`).
+- Manifest: optional `pipeline` field for layer-split models.
 - exo clusters (`-engine-kind exo`, `node.Config.Engine`): a whole exo
   cluster serves as one node. The agent offers only the models exo has
   loaded (read from `GET /state/instances` and `/state/runners` every 5 s),

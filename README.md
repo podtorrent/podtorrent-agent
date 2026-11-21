@@ -146,7 +146,7 @@ curl -N localhost:8787/v1/chat/completions -H 'Authorization: Bearer dev-api-key
 On Linux, for example:
 
 ```bash
-VERSION=v0.5.0
+VERSION=v0.6.0
 curl -LO https://github.com/podtorrent/podtorrent-agent/releases/download/$VERSION/podtorrent-agent-$VERSION-linux-amd64
 curl -LO https://github.com/podtorrent/podtorrent-agent/releases/download/$VERSION/SHA256SUMS
 sha256sum --ignore-missing -c SHA256SUMS
